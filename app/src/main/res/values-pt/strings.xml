@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sunshine</string>
+    <string name="action_refresh">Atualizar</string>
+    <string name="action_settings">Preferências</string>
+    <string name="hello_blank_fragment">Alo, fragmento em branco</string>
+    <string name="hello_world">Alo mundo!</string>
+    <string name="title_activity_detail">AtividadeDetalhe</string>
+</resources>
