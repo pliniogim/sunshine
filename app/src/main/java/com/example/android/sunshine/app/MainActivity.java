@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,46 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.container, new ForecastFragment())
                     .commit();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("Main","OnDestroy called...");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("Main","OnResume called...");
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("Main","OnStart called...");
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("Main","OnStop called...");
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("Main","OnPause called...");
+
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+        Log.d("Main","OnCreate called...");
     }
 
     @Override
